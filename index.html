@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Libro</title>
+  <link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: verdana;
+      background: #000000
+    }
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .page {
+      width: 400px;
+      height: 600px;
+      padding: 30px;
+      background-image: url('https://us.123rf.com/450wm/yamabikay/yamabikay1704/yamabikay170400173/77057036-detalle-del-primer-en-la-textura-de-cuero-marr%C3%B3n-suave-fondo-cuadrado-transparente-listo-para-el.jpg');
+      background-size: cover;
+      border-left: 30px solid #814D29;
+      transform: rotate(-45deg) skewX(10deg) scale(.8);
+      box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+      border-radius: 10px
+    }
+
+    .page:before {
+      content: "";
+      width: 30px;
+      height: 100%;
+      background-image: url('https://us.123rf.com/450wm/yamabikay/yamabikay1704/yamabikay170400173/77057036-detalle-del-primer-en-la-textura-de-cuero-marr%C3%B3n-suave-fondo-cuadrado-transparente-listo-para-el.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: skewY(-45deg) translate(-57px, -43px) 
+    }
+
+    .page:after {
+      content: "";
+      width: 106%;
+      height: 30px;
+      background: #CCC;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: skewX(-45deg) translate(-11px, 30px) 
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="center">
+    <div class="page">
+      <div 
+        class="absolute top-[55px] left-[15px] px-4 py-4 box-border rounded-md"
+        style="
+          -webkit-box-shadow: inset 0px 1px 10px 2px rgba(0,0,0,0.75);
+          -moz-box-shadow: inset 0px 1px 10px 2px rgba(0,0,0,0.75);
+          box-shadow: inset 0px 1px 10px 2px rgba(0,0,0,0.75);
+        "
+      >
+        <div 
+          class="box-border px-12 py-28 rounded-md"
+          style="
+            -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0,0,0,0.36);
+            -moz-box-shadow: inset 0px 0px 10px 2px rgba(0,0,0,0.36);
+            box-shadow: inset 0px 0px 10px 2px rgba(0,0,0,0.36);
+          "
+        >
+          <div class="flex flex-center space-x-4 py-4 ">
+            <div 
+              class="box-border h-24 w-24 p-4 rounded-md"
+              style="
+                -webkit-box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.75);
+                box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.75);
+              "
+            >
+            </div>
+            <div 
+              class="box-border h-24 w-24 p-4 rounded-md"
+              style="
+                -webkit-box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.75);
+                box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.75);
+              "
+            >
+            </div>
+          </div>
+          <div class="flex flex-center space-x-4">
+            <div 
+              class="box-border h-24 w-24 p-4 rounded-md"
+              style="
+                -webkit-box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.75);
+                box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.75);
+              "
+            >
+            </div>
+            <div 
+              class="box-border h-24 w-24 p-4 rounded-md"
+              style="
+                -webkit-box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.75);
+                box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.75);
+              "
+            >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script >
+</script>
+</html>
